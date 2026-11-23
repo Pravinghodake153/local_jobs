@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillSetu - Hyper-Local Verified Skills & Hiring</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <!-- BookMyShow Inspired Dual-Bar Header -->
+  <header class="header">
+    <div class="header-top">
+      <a href="/" class="brand">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+            <path d="M2 17l10 5 10-5"></path>
+            <path d="M2 12l10 5 10-5"></path>
+          </svg>
+        </div>
+        <span>SkillSetu</span>
+        <span class="brand-badge">wHACKiest 2026</span>
+      </a>
+
+      <!-- Search Bar -->
+      <div class="search-bar-wrapper">
+        <span class="search-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </span>
+        <input type="text" id="global-search-input" class="search-input" placeholder="Search for Electricians, Plumbers, Carpenters, or Local Tasks in Bengaluru..." oninput="handleGlobalSearch(event)">
+      </div>
+
+      <div class="nav-actions" id="nav-actions" style="display: flex; align-items: center; gap: 0.75rem;">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+
+    <!-- Secondary Navigation Strip (BookMyShow Style) -->
+    <div class="header-subnav">
+      <div class="header-subnav-container">
+        <div class="subnav-links" id="subnav-links-bar">
+          <a href="/" class="subnav-link active" onclick="navigateRoute('/'); return false;">All Trades</a>
+          <a href="/trades/electrician" class="subnav-link" onclick="navigateRoute('/trades/electrician'); return false;">Electricians</a>
+          <a href="/trades/plumber" class="subnav-link" onclick="navigateRoute('/trades/plumber'); return false;">Plumbers</a>
+          <a href="/trades/carpenter" class="subnav-link" onclick="navigateRoute('/trades/carpenter'); return false;">Carpenters</a>
+          <a href="/trades/mason" class="subnav-link" onclick="navigateRoute('/trades/mason'); return false;">Masons</a>
+          <a href="/trades/painter" class="subnav-link" onclick="navigateRoute('/trades/painter'); return false;">Painters</a>
+        </div>
+        <div style="font-size: 0.75rem; color: #64748B; font-weight: 600; display: flex; align-items: center; gap: 0.35rem;">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Location: <strong style="color: #0F172A;">Bengaluru (5–15 km Circle)</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dynamic Role Sub-Navigation Strip -->
+    <div class="role-nav-strip" id="role-nav-strip" style="display: none;">
+      <div class="role-nav-container" id="role-nav-container">
+        <!-- Injected dynamically based on active path / role -->
+      </div>
+    </div>
+
+    <!-- Breadcrumb Bar -->
+    <div class="breadcrumb-bar" id="breadcrumb-bar">
+      <div class="breadcrumb-container" id="breadcrumb-container">
+        <a href="/" class="breadcrumb-link" onclick="navigateRoute('/'); return false;">Home</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-wrapper" id="main-content">
+    <!-- Injected dynamically via app.js -->
+  </main>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Modal Container -->
+  <div id="modal-root"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

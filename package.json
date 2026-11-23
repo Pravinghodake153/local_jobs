@@ -1,0 +1,11 @@
+{
+  "name": "skillsetu",
+  "version": "1.0.0",
+  "description": "SkillSetu - Hyper-local blue-collar skill proof and trusted hiring platform",
+  "main": "server.ts",
+  "scripts": {
+    "start": "bun run server.ts",
+    "dev": "bun --watch server.ts"
+  },
+  "dependencies": {}
+}
