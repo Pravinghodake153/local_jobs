@@ -654,4 +654,4 @@ const server = Bun.serve({
   },
 });
 
-console.log(`SkillSetu server running at http://localhost:${server.port}`);
+console.log(`AROVIA server running at http://localhost:${server.port}`);

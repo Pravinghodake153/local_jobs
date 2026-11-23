@@ -1,4 +1,4 @@
-// SkillSetu - Production Multi-Page Application Router & Views
+// AROVIA - Production Multi-Page Application Router & Views
 // Zero Emojis. Theme: Light, Dark, Saffron. Pure SVG Icons. BookMyShow Elements.
 
 let currentUser = null;
@@ -293,7 +293,7 @@ function renderHomePage() {
         </div>
         <h1 class="hero-title">Proof First, Trust Both Ways.</h1>
         <p class="hero-subtitle">
-          SkillSetu empowers 250M+ blue-collar workers in India to prove practical trade skills via 30-sec AI video demonstrations. Verified local hiring with balanced price corridors and bilateral ratings.
+          AROVIA empowers 250M+ blue-collar workers in India to prove practical trade skills via 30-sec AI video demonstrations. Verified local hiring with balanced price corridors and bilateral ratings.
         </p>
 
         <div class="hero-chips-row">
@@ -426,7 +426,7 @@ function renderLoginPage() {
       <div class="card">
         <div class="card-header">
           <div>
-            <h1 class="card-title">Sign In to SkillSetu</h1>
+            <h1 class="card-title">Sign In to AROVIA</h1>
             <div class="card-subtitle">Access your verified worker or customer account</div>
           </div>
         </div>
@@ -474,7 +474,7 @@ function renderSignupPage() {
       <div class="card">
         <div class="card-header">
           <div>
-            <h1 class="card-title">Create SkillSetu Account</h1>
+            <h1 class="card-title">Create AROVIA Account</h1>
             <div class="card-subtitle">Join the trusted hyper-local trade network</div>
           </div>
         </div>
@@ -994,7 +994,7 @@ function renderWorkerPricingPage() {
         </div>
 
         <p style="font-size: 0.825rem; color: #475569; margin-bottom: 1.25rem; line-height: 1.5;">
-          SkillSetu calculates dynamic price corridors for each trade based on city cost-of-living and skill levels. Workers have full autonomy to select their rate inside the corridor, shielding technicians from predatory bargaining.
+          AROVIA calculates dynamic price corridors for each trade based on city cost-of-living and skill levels. Workers have full autonomy to select their rate inside the corridor, shielding technicians from predatory bargaining.
         </p>
 
         <div style="margin-bottom: 1.5rem;">
@@ -1083,7 +1083,7 @@ async function renderWorkerProfilePage() {
   `;
 
   const shareUrl = `${window.location.origin}/profile/${currentUser.id}`;
-  const whatsappText = encodeURIComponent(`Check out verified ${currentUser.trade} ${currentUser.name} on SkillSetu. Trust Score: ${currentUser.trust_score}/5.0. Verified Video Proof: ${shareUrl}`);
+  const whatsappText = encodeURIComponent(`Check out verified ${currentUser.trade} ${currentUser.name} on AROVIA. Trust Score: ${currentUser.trust_score}/5.0. Verified Video Proof: ${shareUrl}`);
 
   main.innerHTML = `
     <div style="max-width: 680px; margin: 0 auto;">
@@ -1402,7 +1402,7 @@ async function renderCustomerReviewsPage() {
       </div>
 
       <p style="font-size: 0.825rem; color: #475569; margin-bottom: 1.25rem;">
-        SkillSetu restricts reviews strictly to confirmed completed transactions to protect tradespeople and customers from artificial reputation abuse.
+        AROVIA restricts reviews strictly to confirmed completed transactions to protect tradespeople and customers from artificial reputation abuse.
       </p>
 
       ${completedJobs.length === 0 ? `
@@ -1844,7 +1844,7 @@ async function handleSignupSubmit(e) {
       body: JSON.stringify({ phone, name, role, password, trade, city, hourly_rate }),
     });
     currentUser = data.user;
-    showToast("Registration successful! Welcome to SkillSetu.");
+    showToast("Registration successful! Welcome to AROVIA.");
     renderNav();
     if (currentUser.role === "worker") navigateRoute("/worker/dashboard");
     else navigateRoute("/customer/dashboard");
@@ -2107,7 +2107,7 @@ async function showShareProfileModal(workerId) {
     `;
 
     const shareUrl = `${window.location.origin}/profile/${worker.id}`;
-    const whatsappText = encodeURIComponent(`Check out verified ${worker.trade} ${worker.name} on SkillSetu. Trust Score: ${worker.trust_score}/5.0. Verified Video Proof: ${shareUrl}`);
+    const whatsappText = encodeURIComponent(`Check out verified ${worker.trade} ${worker.name} on AROVIA. Trust Score: ${worker.trust_score}/5.0. Verified Video Proof: ${shareUrl}`);
 
     modalRoot.innerHTML = `
       <div class="modal-overlay" onclick="closeModal(event)">

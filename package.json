@@ -1,7 +1,7 @@
 {
-  "name": "skillsetu",
+  "name": "arovia",
   "version": "1.0.0",
-  "description": "SkillSetu - Hyper-local blue-collar skill proof and trusted hiring platform",
+  "description": "AROVIA - Hyper-local blue-collar skill proof and trusted hiring platform",
   "main": "server.ts",
   "scripts": {
     "start": "bun run server.ts",

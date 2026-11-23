@@ -1,7 +1,7 @@
 import { Database } from "bun:sqlite";
 import { join } from "path";
 
-const dbPath = join(import.meta.dir, "skillsetu.db");
+const dbPath = join(import.meta.dir, "arovia.db");
 export const db = new Database(dbPath, { create: true });
 
 // Enable WAL mode for concurrent performance

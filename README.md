@@ -1,6 +1,6 @@
 # local_jobs
 
-> **SkillSetu** — Hyper-Local Blue-Collar Practical Skill Verification & Bilateral Trusted Hiring Platform.  
+> **AROVIA** — Hyper-Local Blue-Collar Practical Skill Verification & Bilateral Trusted Hiring Platform.  
 > Built for **wHACKiest 2026** (Online Ideathon · 26–27 Nov 2026) · **Track 4 – Mystery Track (UnlockED)**.
 
 ---
@@ -24,8 +24,8 @@ In India, over **250 million** blue- and grey-collar informal workers (electrici
 
 ---
 
-## The Solution: SkillSetu
-SkillSetu introduces a decentralized, hyper-local trust network:
+## The Solution: AROVIA
+AROVIA introduces a decentralized, hyper-local trust network:
 1. **Proof, Not Promises:** 30-second live practical task demonstrations verified against multi-modal AI rubrics (Amazon Bedrock checklist benchmarking safety gear, tooling, and live load testing).
 2. **Two-Way Trust & Safety:** Mutual bilateral ratings and incident reports sealed strictly to confirmed completed transactions, with inspection photo evidence upload.
 3. **Worker Autonomy with Fair Price Corridors:** Algorithmic price corridors calculate localized fair price bands (e.g., INR 300–700 per task); workers set their own rate inside the corridor, shielding technicians from predatory undercutting.
@@ -37,7 +37,7 @@ SkillSetu introduces a decentralized, hyper-local trust network:
 ## Design System: BookMyShow Inspired UI
 * **BookMyShow CSS Elements:**
   * High-impact cinematic **Hero Billboard** with dark gradient scrims (`linear-gradient(90deg, rgba(15,23,42,0.94), rgba(15,23,42,0.35))`) and typography overlaid directly on photography.
-  * **Poster Cards Grid** for verified tradespeople with floating BookMyShow rating pills (`★ 4.9/5.0 · 48 Jobs Done`), distance badges, and bottom text overlays.
+  * **Poster Cards Grid** for verified tradespeople with floating BookMyShow rating pills (`Rating: 4.9/5.0 · 48 Jobs Done`), distance badges, and bottom text overlays.
   * **Cast & Crew Avatar Strip** for top verified masters and clients.
   * **Ticket-Style Booking Summaries** with perforated card edges and mutual confirmation checkpoints.
   * **Video Player Scanner HUD** simulating live Bedrock AI object recognition and checklist benchmarks.
@@ -51,7 +51,7 @@ SkillSetu introduces a decentralized, hyper-local trust network:
 
 ## Multi-Page Route Map
 
-SkillSetu is architected with dedicated role URL sub-paths, supporting direct browser entry, server-side fallback, and client-side SPA routing:
+AROVIA is architected with dedicated role URL sub-paths, supporting direct browser entry, server-side fallback, and client-side SPA routing:
 
 ### 1. Authentication Suite (`/auth/*`)
 * `/auth/login` — Account sign in.
